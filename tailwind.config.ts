@@ -9,8 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#14FFFF", 
+        secondary: "#0207F7", 
+      },
+      backgroundImage: {
+        "angled-gradient": "linear-gradient(100deg, #0207F7, #14FFFF)",
+        "mpattern": "url('/images/mbg.png')"
       },
     },
   },
