@@ -51,7 +51,7 @@ export default function Home() {
           <p className="text-white my-4">Our partnership represents a milestone in institutional crypto adoption, featuring:</p>
 
           <ul className="list-disc pl-5 ml-1 text-white/70 text-sm">
-            <li>Exclusive licensing of Eagle AI Labs' proprietary BTC price prediction algorithms</li>
+            <li>Exclusive licensing of Eagle AI Labs&apos; proprietary BTC price prediction algorithms</li>
             <li>Significant equity stake in a fully regulated U.S. hedge fund</li>
             <li>Management team with proven track record of managing billions in AUM</li>
             <li>Full compliance with U.S. regulatory requirements</li>
@@ -141,7 +141,7 @@ export default function Home() {
         </div>
 
         <footer className="mt-28 flex flex-col border-t border-white/20 items-center md:w-3/5 md:mx-auto md:mt-8 md:flex-row md:items-center md:justify-between md:py-8">
-          <img src="/images/full-logo.png" alt="big logo" className="my-8 w-3/5 h-auto md:w-2/12 md:m-0" />
+          <Image src="/images/full-logo.png" alt="big logo" width={176} height={50} className="my-8 w-3/5 h-auto md:w-2/12 md:m-0" />
 
           <p className="text-white/70 text-center">Copyright © 2024 Eagle AI</p>
 

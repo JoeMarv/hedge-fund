@@ -71,13 +71,13 @@ export default function Navbar() {
         </button>
 
         <ul className="flex flex-col justify-center items-center h-full space-y-6">
-          <li><a href="/" className="hover:text-primary transition-all">Products</a></li>
-          <li><a href="/" className="hover:text-primary transition-all">Partnerships</a></li>
-          <li><a href="/" className="hover:text-primary transition-all">Sponsorships</a></li>
-          <li><a href="/" className="hover:text-primary transition-all">Education</a></li>
-          <li><a href="/" className="hover:text-primary transition-all">Docs</a></li>
-          <li><a href="/" className="hover:text-primary transition-all">Team</a></li>
-          <li><a href="/" className="hover:text-primary font-semibold transition-all">Trade Dividends</a></li>
+          <li><Link href="/" className="hover:text-primary transition-all">Products</Link></li>
+          <li><Link href="/" className="hover:text-primary transition-all">Partnerships</Link></li>
+          <li><Link href="/" className="hover:text-primary transition-all">Sponsorships</Link></li>
+          <li><Link href="/" className="hover:text-primary transition-all">Education</Link></li>
+          <li><Link href="/" className="hover:text-primary transition-all">Docs</Link></li>
+          <li><Link href="/" className="hover:text-primary transition-all">Team</Link></li>
+          <li><Link href="/" className="hover:text-primary font-semibold transition-all">Trade Dividends</Link></li>
           <li>
             <button className="text-white px-8 py-2 mt-4 rounded-3xl bg-angled-gradient border border-transparent hover:border-primary hover:bg-none hover:text-primary focus:border-secondary focus:text-secondary transition-all">
               Launch App

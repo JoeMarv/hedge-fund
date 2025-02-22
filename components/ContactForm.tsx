@@ -38,6 +38,7 @@ export default function ContactForm() {
         setMessage(`❌ Error: ${data.message || "Something went wrong"}`);
       }
     } catch (error) {
+      console.error("Error submitting form:", error);
       setMessage("Network error. Please try again.");
     } finally {
       setLoading(false);
