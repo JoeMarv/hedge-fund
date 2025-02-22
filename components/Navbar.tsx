@@ -1,6 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
-import { X } from "lucide-react";
+import { X } from "lucide-react"; 
+import Link from "next/link";
+import Image from 'next/image';
+
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,20 +26,20 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between md:justify-center md:w-3/5">
         {/* Mobile Logo (Left-Aligned) */}
-        <img src="/images/logo.png" alt="Logo" className="w-8 h-auto md:hidden" />
+        <Image src="/images/logo.png" alt="Logo" width={32} height={32} className="h-auto md:hidden" priority/>
 
         {/* Desktop Logo (Centered) */}
-        <img src="/images/full-logo.png" alt="Logo" className="w-44 mr-8 h-auto hidden md:block" />
+        <Image src="/images/full-logo.png" alt="Logo" width={176} height={50} className="w-44 mr-8 h-auto hidden md:block" priority/>
 
         {/* Desktop Navbar (Centered) */}
         <ul className="hidden md:flex md:items-center md:gap-x-6 text-white">
-          <li><a href="/" className="text-white/70 hover:text-primary transition-all">Products</a></li>
-          <li><a href="/" className="text-white/70 hover:text-primary transition-all">Partnerships</a></li>
-          <li><a href="/" className="text-white/70 hover:text-primary transition-all">Sponsorships</a></li>
-          <li><a href="/" className="text-white/70 hover:text-primary transition-all">Education</a></li>
-          <li><a href="/" className="text-white/70 hover:text-primary transition-all">Docs</a></li>
-          <li><a href="/" className="text-white/70 hover:text-primary transition-all">Team</a></li>
-          <li><a href="/" className="hover:text-primary font-semibold transition-all">Trade Dividends</a></li>
+          <li><Link href="/" className="text-white/70 hover:text-primary transition-all">Products</Link></li>
+          <li><Link href="/" className="text-white/70 hover:text-primary transition-all">Partnerships</Link></li>
+          <li><Link href="/" className="text-white/70 hover:text-primary transition-all">Sponsorships</Link></li>
+          <li><Link href="/" className="text-white/70 hover:text-primary transition-all">Education</Link></li>
+          <li><Link href="/" className="text-white/70 hover:text-primary transition-all">Docs</Link></li>
+          <li><Link href="/" className="text-white/70 hover:text-primary transition-all">Team</Link></li>
+          <li><Link href="/" className="hover:text-primary font-semibold transition-all">Trade Dividends</Link></li>
           <li>
             <button className="text-white px-8 py-2 rounded-3xl bg-angled-gradient border border-transparent hover:border-primary hover:bg-none hover:text-primary focus:border-secondary focus:text-secondary transition-all">
               Launch App
@@ -47,7 +50,7 @@ export default function Navbar() {
         {/* Mobile Menu Button (Right-Aligned) */}
         {!menuOpen && (
           <button onClick={() => setMenuOpen(true)} className="md:hidden">
-            <img src="/images/hamburger.png" alt="Menu" className="w-6 h-6" />
+            <Image src="/images/hamburger.png" alt="Menu" width={24} height={24} className="w-6 h-6" />
           </button>
         )}
       </div>

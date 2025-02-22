@@ -1,4 +1,7 @@
 import ContactForm from "@/components/ContactForm";
+import Image from 'next/image';
+import Link from 'next/link';
+
 
 export default function Home() {
   return (
@@ -8,7 +11,7 @@ export default function Home() {
         <span className="ml-1 truncate max-w-[200px] md:max-w-none md:whitespace-nowrap md:text-sm">
           Partnership and Co-Ownership of a U.S. Regulated Crypto Hedgefund. 
           This enables us to launch a new product, TradeDividends. 
-          <a href="/" className="underline ml-1 font-semibold hover:text-gray-100 focus:text-gray-100">Learn More</a>
+          <Link href="/" className="underline ml-1 font-semibold hover:text-gray-100 focus:text-gray-100">Learn More</Link>
         </span>
       </div>
 
@@ -83,7 +86,7 @@ export default function Home() {
         <div className="my-2 flex flex-col items-center w-full md:flex-row md:justify-between md:my-8">
           <div className="my-4 flex flex-col items-center w-full md:w-[56%] md:m-0">
             <div className="my-2 p-6 flex flex-col items-center bg-white/10 w-full border border-white/20 rounded-xl md:flex-row md:items-start">
-              <img src="/images/key.png" alt="key" className="h-16 w-16 md:mt-4" />
+              <Image src="/images/key.png" alt="key" width={64} height={64} className="h-16 w-16 md:mt-4" />
               
               <div className="md:pl-6">
                 <h2 className="text-xl text-center mt-4 mb-2 md:text-left">Limited Access Available</h2>
@@ -102,7 +105,7 @@ export default function Home() {
             </div>
 
             <div className="my-4 p-6 flex flex-col items-center bg-white/10 w-full border border-white/20 rounded-xl md:flex-row md:items-start">
-              <img src="/images/ribbon.png" alt="ribbon" className="h-16 w-16 md:mt-4" />
+              <Image src="/images/ribbon.png" alt="ribbon" width={64} height={64} className="h-16 w-16 md:mt-4" />
               
               <div className="md:pl-6">
                 <h2 className="text-xl text-center mt-4 mb-2 md:text-left">Benefits of signing up early</h2>
@@ -143,15 +146,15 @@ export default function Home() {
           <p className="text-white/70 text-center">Copyright © 2024 Eagle AI</p>
 
           <div className="flex flex-row space-x-8 my-8 md:space-x-6 md:m-0">
-            <a href="/">
-              <img src="/images/tg.svg" alt="tg" className="w-8 h-8 transition-all hover:brightness-200 hover:contrast-200 focus:brightness-200 focus:contrast-200" />
-            </a>
-            <a href="/">
-              <img src="/images/x.svg" alt="x" className="w-8 h-8 transition-all hover:brightness-200 hover:contrast-200 focus:brightness-200 focus:contrast-200" />
-            </a>
-            <a href="/">
-              <img src="/images/medium.svg" alt="medium" className="w-8 h-8 transition-all hover:brightness-200 hover:contrast-200 focus:brightness-200 focus:contrast-200" />
-            </a>
+            <Link href="/">
+              <Image src="/images/tg.svg" alt="tg" width={32} height={32} className="w-8 h-8 transition-all hover:brightness-200 hover:contrast-200 focus:brightness-200 focus:contrast-200" />
+            </Link>
+            <Link href="/">
+              <Image src="/images/x.svg" alt="x" width={32} height={32} className="w-8 h-8 transition-all hover:brightness-200 hover:contrast-200 focus:brightness-200 focus:contrast-200" />
+            </Link>
+            <Link href="/">
+              <Image src="/images/medium.svg" alt="medium" width={32} height={32} className="w-8 h-8 transition-all hover:brightness-200 hover:contrast-200 focus:brightness-200 focus:contrast-200" />
+            </Link>
           </div>
         </footer>
       </section>
