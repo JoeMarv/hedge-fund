@@ -9,8 +9,8 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "My Next.js App",
-  description: "A Next.js 15 project with custom fonts",
+  title: "Eagle AI",
+  description: "Pioneering the Future of Digital Asset Investment",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
